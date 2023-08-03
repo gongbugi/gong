@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost","gong","0731","board");
+$con = mysqli_connect("localhost","root","0731","board");
 $no = $_GET['no'];
 $query = "select * from data where no='$no'";
 $result = mysqli_query($con, $query);
@@ -56,7 +56,7 @@ $data = mysqli_fetch_array($result);
                 <th>내용</th>
             </tr>
             <?php
-            $con = mysqli_connect('localhost','gong','0731','board');
+            $con = mysqli_connect('localhost','root','0731','board');
             $query = "select * from reply where b_no=$no";
             $result = mysqli_query($con, $query);
             while($data = mysqli_fetch_array($result)){

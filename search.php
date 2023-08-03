@@ -13,7 +13,7 @@
                 <th width=150>작성자</th>
             </tr>
             <?php
-            $con = mysqli_connect("localhost","gong","0731","board");
+            $con = mysqli_connect("localhost","root","0731","board");
             $select = $_GET['select'];
             $search = $_GET['search'];
             $query = "select * from data where $select like '%$search%' order by no desc";

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysqli_connect("localhost","gong","0731","board");
+$con = mysqli_connect("localhost","root","0731","board");
 
 $reply_no = $_GET['reply_no'];
 $b_no = $_GET['b_no'];

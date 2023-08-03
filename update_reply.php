@@ -3,7 +3,7 @@
   session_start();
   $nick = $_SESSION['nick'];
   $id = $_SESSION['id'];
-  $con = mysqli_connect("localhost","gong","0731","board");
+  $con = mysqli_connect("localhost","root","0731","board");
   $b_no = $_GET['b_no'];
   $reply_no = $_GET['reply_no'];
   $query = "select * from reply where reply_no='$reply_no'";

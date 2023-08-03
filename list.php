@@ -23,7 +23,7 @@
                 <th width=150>작성자</th>
             </tr>
             <?php
-            $con = mysqli_connect("localhost","gong","0731","board");
+            $con = mysqli_connect("localhost","root","0731","board");
             $query = "select * from data order by no desc";
             $result = mysqli_query($con, $query);
             while($data = mysqli_fetch_array($result)){

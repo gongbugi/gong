@@ -3,7 +3,7 @@
   session_start();
   $nick = $_SESSION['nick'];
   $id = $_SESSION['id'];
-  $con = mysqli_connect("localhost","gong","0731","board");
+  $con = mysqli_connect("localhost","root","0731","board");
   $no = $_GET['no'];
   $query = "select * from data where no='$no'";
   $result = mysqli_query($con, $query);
