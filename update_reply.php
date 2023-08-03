@@ -14,7 +14,7 @@
     if($nick != $data['nick']) {
         echo "<script>
         alert('작성자 본인만 수정 가능합니다.');
-        location.replace('list.php');
+        location.replace('content.php?no=$b_no');
         </script>";
         }
 ?>
