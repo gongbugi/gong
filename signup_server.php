@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost','gong','0731','test');
+$con = mysqli_connect('localhost','gong','0731','board');
 if ($_POST['id'] != NULL && $_POST['pw'] != NULL){
     $user_id = mysqli_real_escape_string($con, ($_POST['id']));
     $user_pw = mysqli_real_escape_string($con, ($_POST['pw']));
