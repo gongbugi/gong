@@ -12,7 +12,7 @@
             if(!isset($_SESSION['id'])) {
                 echo "<script>
                 alert('로그인이 필요한 페이지입니다.');
-                location.replace('home.php');
+                location.replace('index.php');
                 </script>";
             }
     ?>
@@ -45,7 +45,7 @@
             <input type="text" name="search" required="required"> <button>검색</button>
         </div>
         </form>
-        <a href="home.php">홈</a>
+        <a href="index.php">홈</a>
         <a href="write.php">글쓰기</a>
     </body>
 </html>

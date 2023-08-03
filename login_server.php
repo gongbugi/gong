@@ -12,20 +12,20 @@ if ($_POST['id'] != NULL && $_POST['pw'] != NULL){
         $_SESSION['nick'] = $nick;
         $_SESSION['id'] = $user_id;
         echo "<script>       
-        location.replace('home.php');
+        location.replace('index.php');
         </script>";
     }
     else{
         echo "<script>
         alert('일치하는 아이디 또는 비밀번호가 없습니다.');
-        location.replace('home.php');
+        location.replace('index.php');
         </script>";
     }
 }
 else{
     echo "<script>
     alert('아이디와 비밀번호를 입력하세요.');
-    location.replace('home.php');
+    location.replace('index.php');
     </script>";
 }
 ?>

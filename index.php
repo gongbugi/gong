@@ -10,7 +10,7 @@
 <body>
         <table width=800 border="1">
             <tr>
-                <th width=100><a href="home.php">홈</a></th>
+                <th width=100><a href="index.php">홈</a></th>
                 <th width=100><a href="list.php">게시판</a></th>
             </tr>
         </table>

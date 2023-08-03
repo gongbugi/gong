@@ -25,7 +25,7 @@ if ($_POST['id'] != NULL && $_POST['pw'] != NULL){
         mysqli_query($con, $sql_save);
         echo "<script>
         alert('가입성공');
-        location.replace('home.php');
+        location.replace('index.php');
         </script>";
     }
 }
