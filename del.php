@@ -5,6 +5,9 @@ $con = mysqli_connect("localhost","root","0731","board");
 $no = $_GET['no'];
 $nick = $_SESSION['nick'];
 
+$query1 = "select * from data where no='$no'";
+$result = mysqli_query($con, $query1);
+$data = mysqli_fetch_array($result);
 
 if($nick != $data['nick']) {
     echo "<script>
