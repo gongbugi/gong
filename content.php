@@ -1,12 +1,4 @@
 <?php
-header("Content-Type: application/force-download");
-header("Content-type: application/x-msdownload");
-header("Content-Type: application/octet-stream");
-header('Content-Type: application/x-octetstream');
-header('Content-Type: application/pdf');
-header("Content-Type: file/unknown");
-header("Content-Type: image/png");
-header("Content-Transfer-Encoding: binary");
 $con = mysqli_connect("localhost","root","0731","board");
 $no = $_GET['no'];
 $query = "select * from data where no='$no'";
@@ -36,7 +28,7 @@ $data = mysqli_fetch_array($result);
                 <td><?=nl2br($data['content'])?></td>
             </tr>
             <tr>
-                <td colspan="2"><a href="./upload/<?php echo $data['file'];?>" download><?php echo $data['file']; ?></a></td>
+                <td colspan="2"><a href="/var/www/html/upload/<?php echo $data['file'];?>" download><?php echo $data['file']; ?></a></td>
             </tr>
             <tr>
                 <td colspan="2">
