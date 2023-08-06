@@ -1,4 +1,12 @@
 <?php
+header("Content-Type: application/force-download");
+header("Content-type: application/x-msdownload");
+header("Content-Type: application/octet-stream");
+header('Content-Type: application/x-octetstream');
+header('Content-Type: application/pdf');
+header("Content-Type: file/unknown");
+header("Content-Type: image/png");
+header("Content-Transfer-Encoding: binary");
 $con = mysqli_connect("localhost","root","0731","board");
 session_start();
 $nick = $_SESSION['nick'];
