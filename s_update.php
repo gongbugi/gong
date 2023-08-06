@@ -13,7 +13,7 @@ if(isset($_FILES['u_file'])){
     $size = $_FILES['u_file']['size'];
     $tmpfile =  $_FILES['u_file']['tmp_name'];
     $filename = $_FILES['u_file']['name'];
-    $folder = "/var/www/html/upload/".$filename;
+    $folder = "./upload/".$filename;
     move_uploaded_file($tmpfile,$folder);
 }
 

@@ -28,7 +28,7 @@ $data = mysqli_fetch_array($result);
                 <td><?=nl2br($data['content'])?></td>
             </tr>
             <tr>
-                <td colspan="2"><a href="/var/www/html/upload/<?php echo $data['file'];?>" download><?php echo $data['file']; ?></a></td>
+                <td colspan="2"><a href="./upload/<?php echo $data['file'];?>" download><?php echo $data['file']; ?></a></td>
             </tr>
             <tr>
                 <td colspan="2">
