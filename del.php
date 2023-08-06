@@ -16,9 +16,8 @@ if($nick != $data['nick']) {
     </script>";
 }
 else{*/
-    mysqli_query($con, $query);
     $query = "delete from data where no='$no'";
-
+    mysqli_query($con, $query);
     echo "<script>
     alert('삭제되었습니다.');
     location.replace('list.php');
