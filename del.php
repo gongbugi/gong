@@ -23,6 +23,6 @@ else{*/
     alert('삭제되었습니다.');
     location.replace('list.php');
     </script>";
-}
+/*}*/
 ?>
 
