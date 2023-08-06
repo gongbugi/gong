@@ -11,7 +11,7 @@ if(isset($_FILES['u_file'])){
     $tmpfile =  $_FILES['u_file']['tmp_name'];
     $o_name = $_FILES['u_file']['name'];
     $filename = iconv("UTF-8", "EUC-KR",$_FILES['u_file']['name']);
-    $folder = "upload/".$filename;
+    $folder = "./upload/".$filename;
     move_uploaded_file($tmpfile,$folder);
 }
 
