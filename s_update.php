@@ -9,14 +9,15 @@ $title = $_POST['title'];
 $content = $_POST['content'];
 
 if(isset($_FILES['u_file'])){
+    $type = $_FILES['u_file']['type'];
+    $size = $_FILES['u_file']['size'];
     $tmpfile =  $_FILES['u_file']['tmp_name'];
-    $o_name = $_FILES['u_file']['name'];
-    $filename = iconv("UTF-8", "EUC-KR",$_FILES['u_file']['name']);
-    $folder = "upload/".$filename;
+    $filename = $_FILES['u_file']['name'];
+    $folder = "/var/www/html/upload/".$filename;
     move_uploaded_file($tmpfile,$folder);
 }
 
-$query = "update data set title='$title', content='$content', file='$o_name' where no = $no";
+$query = "update data set title='$title', content='$content', file='$filename' where no = $no";
 
 mysqli_query($con, $query);
 echo "<script>
